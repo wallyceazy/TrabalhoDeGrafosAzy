@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1452981803 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\main.cpp
+	<iostream>
+	"ListaAdjacencia.h"
+	"sstream"
+
+1453083085 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\no.cpp
+	"No.h"
+
+1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\no.h
+
+1453083085 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\lista.cpp
+	"Lista.h"
+	"No.h"
+	<iostream>
+
+1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\lista.h
+	"No.h"
+
+1453083085 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\listaadjacencia.cpp
+	<iostream>
+	"NosDeAdjacencia.h"
+	"ListaAdjacencia.h"
+	<iostream>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+
+1453063914 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\nosdeadjacencia.cpp
+	"NosDeAdjacencia.h"
+
+1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\nosdeadjacencia.h
+	"Lista.h"
+
+1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\listaadjacencia.h
+	"NosDeAdjacencia.h"
+	<string>
+
