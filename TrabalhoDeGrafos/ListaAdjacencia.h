@@ -19,7 +19,7 @@ public:
     void RemoveNo(int val);
     void OrdemGrafo();
     bool VerificaSelfLoop(NosDeAdjacencia *p);
-    void menorCaminho_Grafo(int ini, int fim);
+    void VerificaRegularidade(int val);
 
 
 

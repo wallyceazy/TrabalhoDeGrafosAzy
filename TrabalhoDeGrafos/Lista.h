@@ -8,7 +8,6 @@ public:
     void insereInicio(int val,int aresta);
     bool busca(int val);
     void Imprime();
-    void InsereFim(int val, int aresta);
     void RemoveLista(int val);
 
 private:

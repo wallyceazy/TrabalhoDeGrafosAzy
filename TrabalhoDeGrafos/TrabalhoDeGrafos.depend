@@ -37,3 +37,41 @@
 	"NosDeAdjacencia.h"
 	<string>
 
+1455748514 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\lista.cpp
+	"Lista.h"
+	"No.h"
+	<iostream>
+
+1455748494 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\lista.h
+	"No.h"
+
+1453083085 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\no.h
+
+1455748849 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\listaadjacencia.cpp
+	<iostream>
+	"NosDeAdjacencia.h"
+	"ListaAdjacencia.h"
+	<iostream>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+
+1453083085 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\nosdeadjacencia.h
+	"Lista.h"
+
+1455748803 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\listaadjacencia.h
+	"NosDeAdjacencia.h"
+	<string>
+
+1455747636 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\main.cpp
+	<iostream>
+	"ListaAdjacencia.h"
+	"sstream"
+
+1453083085 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\no.cpp
+	"No.h"
+
+1455735297 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\nosdeadjacencia.cpp
+	"NosDeAdjacencia.h"
+

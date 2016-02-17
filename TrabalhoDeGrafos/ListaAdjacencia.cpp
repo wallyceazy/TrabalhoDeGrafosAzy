@@ -23,7 +23,7 @@ ListaAdjacencia::ListaAdjacencia(string val)
     valor.str("");
     int No_1,No_2,ValorAresta;
     NumNos = inteiro;
-    for(int i=0; i<=inteiro; i++)
+    for(int i=1; i<=inteiro; i++)
     {
         insereNo(i);
 
@@ -152,7 +152,7 @@ void ListaAdjacencia::insereAresta(int Inicio, int Destino, int Aresta)
         }
 
             p->addGrau();//adiciona um no grau do no
-            p->getListaDeLigacoes()->InsereFim(Destino,Aresta);//insere na lista de ligacoes
+            p->getListaDeLigacoes()->insereInicio(Destino,Aresta);//insere na lista de ligacoes
 
    }
 
@@ -198,10 +198,11 @@ void ListaAdjacencia::insereNo(int val)
     NosDeAdjacencia *auxiliar = primeiro;
     NosDeAdjacencia *anterior = NULL;
 
-    if(auxiliar == NULL || auxiliar->getInfo()>val)//Lista vazia inserir no primeiro
+    if(primeiro == NULL || primeiro->getInfo()>val)//Lista vazia inserir no primeiro
     {
-        p->setProx(auxiliar);
+
         primeiro = p;
+        p->setProx(auxiliar);
     }
     else
     {
@@ -333,25 +334,34 @@ void ListaAdjacencia::RemoveNo(int val)
 
 }
 
-void ListaAdjacencia::menorCaminho_Grafo(int ini, int fim)
+
+
+void ListaAdjacencia::VerificaRegularidade(int val)
 {
-    int Caminho[NumNos];
-    int dist[NumNos];
-    int visitado[NumNos];
-    for(int i=0; i<=NumNos; i++)
+    NosDeAdjacencia *p = primeiro;
+    int verificado=0;
+    while(p!=NULL)
     {
-        visitado[i]= 0;
-        dist[i] = -1;
-        Caminho[i] = -1;
+
+        if(p->getGrau()!=val)
+        {
+            verificado = 1;
+            p = NULL;
+        }
+        else
+        {
+            p = p->getProx();
+        }
+
     }
-
-
+  if(verificado==1)
+  {
+      cout<<"Grafo nao eh de "<<val<<" regularidade!"<<endl;
+  }
+  else{
+    cout<<"Grafo eh "<<val<<" regular!"<<endl;
+  }
 }
-
-
-
-
-
 
 
 
