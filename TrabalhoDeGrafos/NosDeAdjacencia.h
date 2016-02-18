@@ -1,6 +1,7 @@
 #ifndef NOSDEADJACENCIA_H_INCLUDED
 #define NOSDEADJACENCIA_H_INCLUDED
 #include "Lista.h"
+
 class NosDeAdjacencia{
 public:
     NosDeAdjacencia();
@@ -12,6 +13,8 @@ public:
     int getGrau();
     void addGrau();
     Lista* getListaDeLigacoes();
+    void VetorDeArestas();
+    No* getVetorArestas(){return arestas;}
 
 
 private:
@@ -19,6 +22,7 @@ private:
     int Grau;
     NosDeAdjacencia *prox;
     Lista *ListaDeLigacoes;
+    No *arestas;
 
 };
 

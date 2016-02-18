@@ -23,7 +23,7 @@ ListaAdjacencia::ListaAdjacencia(string val)
     valor.str("");
     int No_1,No_2,ValorAresta;
     NumNos = inteiro;
-    for(int i=1; i<=inteiro; i++)
+    for(int i=0; i<=inteiro; i++)
     {
         insereNo(i);
 
@@ -77,12 +77,22 @@ ListaAdjacencia::ListaAdjacencia(string val)
     }
 
     arquivo.close();
-
-
+criaVetores();
 
 }
 
+void ListaAdjacencia::criaVetores()
+{
+    NosDeAdjacencia *p = primeiro;
+   while(p!=NULL)
+   {
+        p->VetorDeArestas();
+   p = p->getProx();
 
+   }
+
+
+}
 void ListaAdjacencia::VerificaNulo()
 {
     NosDeAdjacencia* p = primeiro;
@@ -137,6 +147,17 @@ void ListaAdjacencia::VerificaTrivial()
 
 
 }
+void  ListaAdjacencia::imprimevetor()
+{
+    cout<<"No 0 :"<<endl;
+    No *aa=primeiro->getVetorArestas();
+
+    for(int i=0; i<primeiro->getGrau(); i++)
+    {
+        cout<<"No :"<<aa[i].getInfo()<<" Aresta: "<<aa[i].getAresta();
+    }
+
+}
 void ListaAdjacencia::insereAresta(int Inicio, int Destino, int Aresta)
 {
 
@@ -152,7 +173,7 @@ void ListaAdjacencia::insereAresta(int Inicio, int Destino, int Aresta)
         }
 
             p->addGrau();//adiciona um no grau do no
-            p->getListaDeLigacoes()->insereInicio(Destino,Aresta);//insere na lista de ligacoes
+            p->getListaDeLigacoes()->insereInicio(Destino,Aresta);
 
    }
 
@@ -160,7 +181,7 @@ void ListaAdjacencia::insereAresta(int Inicio, int Destino, int Aresta)
     {
         if(!busca(Inicio))
         {
-            cout<<"O No de valor "<<Inicio<<" nao existe no grafo!! Ensira o No e refaca a operacao"<<endl;
+            cout<<"O No de valor "<<Inicio<<" nao existe no grafo!! Ensira o No e refaca a operacao"<<Aresta<<endl;
         }
     }
 
@@ -198,11 +219,10 @@ void ListaAdjacencia::insereNo(int val)
     NosDeAdjacencia *auxiliar = primeiro;
     NosDeAdjacencia *anterior = NULL;
 
-    if(primeiro == NULL || primeiro->getInfo()>val)//Lista vazia inserir no primeiro
+    if(auxiliar == NULL || auxiliar->getInfo()>val)//Lista vazia inserir no primeiro
     {
-
-        primeiro = p;
         p->setProx(auxiliar);
+        primeiro = p;
     }
     else
     {
@@ -336,32 +356,8 @@ void ListaAdjacencia::RemoveNo(int val)
 
 
 
-void ListaAdjacencia::VerificaRegularidade(int val)
-{
-    NosDeAdjacencia *p = primeiro;
-    int verificado=0;
-    while(p!=NULL)
-    {
 
-        if(p->getGrau()!=val)
-        {
-            verificado = 1;
-            p = NULL;
-        }
-        else
-        {
-            p = p->getProx();
-        }
 
-    }
-  if(verificado==1)
-  {
-      cout<<"Grafo nao eh de "<<val<<" regularidade!"<<endl;
-  }
-  else{
-    cout<<"Grafo eh "<<val<<" regular!"<<endl;
-  }
-}
 
 
 

@@ -11,7 +11,10 @@ int main()
     nome_arquivo_entrada = "grafo_125";
     nome_arquivo_entrada = nome_arquivo_entrada+".txt";
     ListaAdjacencia *novo = new ListaAdjacencia(nome_arquivo_entrada);
-    novo->VerificaRegularidade(4);
+
+    novo->ImprimeNos(0);
+   novo->imprimevetor();
+
 
     return 0;
 }

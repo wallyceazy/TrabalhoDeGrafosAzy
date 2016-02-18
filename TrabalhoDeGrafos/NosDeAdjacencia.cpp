@@ -1,5 +1,6 @@
 #include "NosDeAdjacencia.h"
-
+#include <iostream>
+using namespace std;
 NosDeAdjacencia::NosDeAdjacencia()
 {
     ListaDeLigacoes = new Lista();    // cria um no com uma lista onde tera todas suas ligacoes
@@ -34,3 +35,25 @@ int NosDeAdjacencia::getGrau()
 {
     return Grau;
 }
+
+
+void NosDeAdjacencia::VetorDeArestas()
+{
+
+ arestas = new No[Grau];
+  Lista* auxiliar = getListaDeLigacoes();
+  No* p = auxiliar->getPrimeiro();
+
+
+      for(int i=0; i<Grau; i++)
+      {
+
+          arestas[i] = *p;
+          p = p->getProx();
+
+
+
+      }
+
+  }
+

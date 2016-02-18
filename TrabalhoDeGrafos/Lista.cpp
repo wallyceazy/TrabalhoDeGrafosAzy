@@ -52,6 +52,30 @@ void Lista::Imprime()
     cout<<endl;
 }
 
+void Lista::InsereFim(int val, int aresta)
+{
+    No* p = primeiro;
+    if(p==NULL)
+    {
+        No *aux = new No();
+        aux->setInfo(val);
+        aux->setAresta(aresta);
+        primeiro = aux;
+
+    }
+    else
+    {
+
+        while(p->getProx()!=NULL)
+        {
+            p = p->getProx();
+        }
+        No *aux = new No();
+        aux->setInfo(val);
+        aux->setAresta(aresta);
+        p->setProx(aux);
+    }
+}
 
 
 

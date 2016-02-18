@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1452981803 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\main.cpp
+1455765600 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\main.cpp
 	<iostream>
 	"ListaAdjacencia.h"
 	"sstream"
@@ -7,17 +7,17 @@
 1453083085 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\no.cpp
 	"No.h"
 
-1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\no.h
+1455762697 c:\users\wallyce\desktop\grafos\trabalhodegrafos\no.h
 
 1453083085 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\lista.cpp
 	"Lista.h"
 	"No.h"
 	<iostream>
 
-1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\lista.h
+1455762660 c:\users\wallyce\desktop\grafos\trabalhodegrafos\lista.h
 	"No.h"
 
-1453083085 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\listaadjacencia.cpp
+1455765877 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\listaadjacencia.cpp
 	<iostream>
 	"NosDeAdjacencia.h"
 	"ListaAdjacencia.h"
@@ -27,51 +27,14 @@
 	<string>
 	<sstream>
 
-1453063914 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\nosdeadjacencia.cpp
+1455765939 source:c:\users\wallyce\desktop\grafos\trabalhodegrafos\nosdeadjacencia.cpp
 	"NosDeAdjacencia.h"
+	<iostream>
 
-1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\nosdeadjacencia.h
+1455765258 c:\users\wallyce\desktop\grafos\trabalhodegrafos\nosdeadjacencia.h
 	"Lista.h"
 
-1453083085 c:\users\wallyce\desktop\grafos\trabalhodegrafos\listaadjacencia.h
+1455764211 c:\users\wallyce\desktop\grafos\trabalhodegrafos\listaadjacencia.h
 	"NosDeAdjacencia.h"
 	<string>
-
-1455748514 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\lista.cpp
-	"Lista.h"
-	"No.h"
-	<iostream>
-
-1455748494 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\lista.h
-	"No.h"
-
-1453083085 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\no.h
-
-1455748849 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\listaadjacencia.cpp
-	<iostream>
-	"NosDeAdjacencia.h"
-	"ListaAdjacencia.h"
-	<iostream>
-	<fstream>
-	<iostream>
-	<string>
-	<sstream>
-
-1453083085 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\nosdeadjacencia.h
-	"Lista.h"
-
-1455748803 c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\listaadjacencia.h
-	"NosDeAdjacencia.h"
-	<string>
-
-1455747636 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\main.cpp
-	<iostream>
-	"ListaAdjacencia.h"
-	"sstream"
-
-1453083085 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\no.cpp
-	"No.h"
-
-1455735297 source:c:\users\wallyce\git\trabalhodegrafosazy\trabalhodegrafos\nosdeadjacencia.cpp
-	"NosDeAdjacencia.h"
 

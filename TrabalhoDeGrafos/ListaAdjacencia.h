@@ -19,8 +19,9 @@ public:
     void RemoveNo(int val);
     void OrdemGrafo();
     bool VerificaSelfLoop(NosDeAdjacencia *p);
-    void VerificaRegularidade(int val);
-
+    void menorCaminho_Grafo(int ini, int fim);
+    void imprimevetor();
+    void criaVetores();
 
 
 private:

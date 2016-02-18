@@ -11,6 +11,7 @@ public:
     void setInfo(int val);
     void setProx(No *p);
     void setAresta(int val);
+    int getAresta(){return aresta;};
 
 private:
     int info;
